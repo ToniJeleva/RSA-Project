@@ -19,8 +19,10 @@ public class HuffmanCompresor {
 		
 	}
 	
-	public void encode(){
-		 for (int i = 0; i < input.length; i++){
+	public void encode(int start, int end){
+		 for (int i = start; i < end; i++){
+//			 System.out.println(i);
+//			 System.out.println(input[i]);
 	            frequencyTable[input[i]]++;
 		 }
 		 
